@@ -1,6 +1,6 @@
 import React from 'react';
 import './full_solar.css';
-import partial_lunar from './partial_lunar.jpg';
+import partial_lunar from './lunar_eclipse.jpg';
 import { Heading,Text } from '@chakra-ui/react';
 import { Grid, GridItem, Box } from '@chakra-ui/react'
 
