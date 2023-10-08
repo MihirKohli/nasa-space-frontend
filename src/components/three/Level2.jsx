@@ -2,6 +2,7 @@ import React, { Suspense, useState } from 'react'
 import Play from './Play';
 import { Canvas } from '@react-three/fiber';
 import { Stars } from '@react-three/drei';
+import './three.css'
 
 export default function Level2() {
     const [wSun,setWSun] = useState({x:0,y:0,z:0});
@@ -37,7 +38,7 @@ export default function Level2() {
 
    return (    
     <>
-        <Canvas id="three-canvas-container" shadows>
+        <Canvas  id="three-canvas-container" shadows>
       <Suspense fallback={<></>}>
         
         <Play initPos={initPos} isWinning={isWinning}/>
