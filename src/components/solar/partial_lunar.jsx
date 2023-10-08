@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import './full_solar.css';
+import partial_lunar from './partial_lunar.jpg';
+import { Heading,Text } from '@chakra-ui/react';
 import { Grid, GridItem, Box } from '@chakra-ui/react'
-import { Heading,Text } from '@chakra-ui/react'
-import partial_solar from '../solar/partial-solar-eclipse.jpg'
-import './partial_solar.css'
 
-function PartialSolar() {
+
+function PartialLunar() {
   return (
     <div className='responsive-container'>
       <Box position="relative" width="100%" overflow="hidden">
@@ -26,7 +27,7 @@ function PartialSolar() {
             </Text>
             </GridItem>
             <GridItem colSpan={2} p={4} mt={16}>
-                <img src={partial_solar} alt='partial' className="responsive-image"/>
+                <img src={partial_lunar} alt='partial' className="responsive-image"/>
             </GridItem>
             <GridItem colSpan={4} p={4}>
             <iframe
@@ -47,7 +48,7 @@ function PartialSolar() {
         <div class="clouds"></div>
 
     </div>
-  )
+  );
 }
 
-export default PartialSolar;
+export default PartialLunar;

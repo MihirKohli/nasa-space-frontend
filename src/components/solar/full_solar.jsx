@@ -1,37 +1,52 @@
 import React from 'react';
 import './full_solar.css';
-import solar_image from './solar-eclipse.jpg';
-import { Heading } from '@chakra-ui/react';
+import full_solar from './solar-eclipse.jpg';
+import { Heading,Text } from '@chakra-ui/react';
+import { Grid, GridItem, Box } from '@chakra-ui/react'
 
-function Solar() {
+function FullSolar() {
   return (
-    <div className="background-container">
-      <div className="stars"></div>
-      <div className="twinkling"></div>
-      <div className="clouds"></div>
-      <div className="content">
-        <div className="flex-container">
-          <div className='text'>
-            <Heading as='h1' size='2xl' isTruncated>
-              Full Solar Eclipse
+    <div className='responsive-container'>
+      <Box position="relative" width="100%" overflow="hidden">
+        
+
+        <Grid
+            h='auto'
+            templateRows='repeat(2, 1fr)'
+            templateColumns='repeat(4, 1fr)'
+            gap={4}
+            className='responsive-container'
+            >
+            <GridItem colSpan={2} p={4}>
+            <Heading as='h1' size='2xl' isTruncated color="white">
+              Partial Solar Eclipse
             </Heading>
-            <p>
-            Where does it come from?
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            <Text color="white">
+            A full solar eclipse is a remarkable celestial event that captivates observers around the world. It occurs when the moon passes between the Earth and the Sun, perfectly aligning in a way that momentarily obscures the Sun's entire disk from view. During this awe-inspiring event, the sky darkens, stars become visible, and the temperature drops, creating an eerie and almost surreal atmosphere. What makes a full solar eclipse particularly striking is the appearance of the Sun's corona, a luminous halo of plasma that surrounds the obscured solar disk. This rare and dramatic phenomenon offers scientists valuable insights into the Sun's outer atmosphere and has cultural significance in many societies, often regarded as a symbol of cosmic wonder and mystery. Witnessing a full solar eclipse is an unforgettable experience, evoking a sense of awe and wonder at the grandeur of our solar system and the precision of celestial mechanics.</Text>
+            </GridItem>
+            <GridItem colSpan={2} p={4} mt={16}>
+                <img src={full_solar} alt='partial' className="responsive-image"/>
+            </GridItem>
+            <GridItem colSpan={4} p={4}>
+            <iframe
+    src="https://www.youtube.com/embed/tgbNymZ7vqY"
+    width="60%" 
+    height="500px" 
+    frameBorder="0"
+    allowFullScreen
+    title="YouTube Video"
+    style={{ margin: '0 auto' }} 
+  ></iframe>
 
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+            </GridItem>
+            </Grid>
+            </Box>
+            <div className="stars"></div>
+        <div className="twinkling"></div>
+        <div class="clouds"></div>
 
-Where can I get some?
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-            </p>
-          </div>
-          <div className='full-solar'>
-            <img src={solar_image} alt='full-solar-eclipse' />
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
 
-export default Solar;
+export default FullSolar;
