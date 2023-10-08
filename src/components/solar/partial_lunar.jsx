@@ -20,10 +20,13 @@ function PartialLunar() {
             >
             <GridItem colSpan={2} p={4}>
             <Heading as='h1' size='2xl' isTruncated color="white" className="chakra-heading-class" m={'3'}>
-              Partial Solar Eclipse
+              Partial Lunar Eclipse
             </Heading>
             <Text color="white" m={'3'}>
-            A partial solar eclipse happens when the Moon passes between the Sun and Earth but the Sun, Moon, and Earth are not perfectly lined up. Only a part of the Sun will appear to be covered, giving it a crescent shape. During a total or annular solar eclipse, people outside the area covered by the Moon’s inner shadow see a partial solar eclipse.
+            A partial lunar eclipse occurs when only a portion of the Moon enters Earth's penumbra, the outer part of its shadow. Unlike a total lunar eclipse, where the Moon is completely immersed in Earth's umbra (central shadow), a partial lunar eclipse displays a segment of the Moon darkened by Earth's penumbra. This phenomenon arises due to the imperfect alignment of the Earth, Moon, and Sun during the eclipse event.
+            During a partial lunar eclipse, the shaded portion of the Moon may appear slightly dimmer, creating a subtle but noticeable effect. The extent of darkening varies, depending on how deeply the Moon enters the penumbra. Partial lunar eclipses are more common than total lunar eclipses and are visible from a broader range of locations on Earth.
+            Scientifically, partial lunar eclipses provide astronomers with opportunities to study the Earth-Moon-Sun system. By analyzing the gradual shading of the Moon and the subtle changes in its appearance, scientists gain insights into celestial mechanics and orbital dynamics. These observations contribute valuable data for refining our understanding of lunar and Earth sciences.
+            Partial lunar eclipses also hold cultural significance, inspiring interest and curiosity among enthusiasts and the public. They often prompt discussions about astronomy, celestial phenomena, and the mechanics of eclipses. Educational institutions and astronomy organizations frequently organize events to facilitate public engagement, enhancing awareness of lunar eclipses and their scientific implications.
             </Text>
             </GridItem>
             <GridItem colSpan={2} p={4} m={16}>
@@ -31,7 +34,7 @@ function PartialLunar() {
             </GridItem>
             <GridItem colSpan={4} p={4}>
             <iframe
-    src="https://www.youtube.com/embed/tgbNymZ7vqY"
+    src="https://www.youtube.com/embed/lNi5UFpales"
     width="60%" 
     height="500px" 
     frameBorder="0"
