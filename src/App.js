@@ -8,7 +8,7 @@ import FullSolar from './components/solar/full_solar';
 import PartialSolar from './components/solar/partial_solar';
 import FullLunar from './components/solar/full_lunar';
 import PartialLunar from './components/solar/partial_lunar';
-// import './fonts.css'
+import './fonts.css'
 import Footer from './components/footer/footer';
 import Level2 from './components/three/Level2';
 
