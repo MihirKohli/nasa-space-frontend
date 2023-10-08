@@ -9,13 +9,13 @@ import Moon from "./Moon";
 import Earth from "./Earth";
 import { Ecliptic } from "./Ecliptic";
 
-export default function Play({ initPos, isWinning }) {
+export default function Play({ initPos, isWinning,curIdx,setCurIdx }) {
 
     let [sun, setSun] = useState({ x: 0, y: 0, z: 0 });
     let [earth, setEarth] = useState({ x: 0, y: 0, z: 0 });
     let [moon, setMoon] = useState({ x: 0, y: 0, z: 0 });
     let [moonCor, setMoonCor] = useState([{ x: initPos.moon.x, y: initPos.moon.y }]);
-    let [curIdx, setCurIdx] = useState(0);
+    // let [curIdx, setCurIdx] = useState(0);
     let [earthMoonDist, setEarthMoonDist] = useState(0);
 
     useEffect(() => {

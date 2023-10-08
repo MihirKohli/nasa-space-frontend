@@ -4,7 +4,7 @@ import { Canvas } from '@react-three/fiber';
 import { Stars } from '@react-three/drei';
 import './three.css'
 
-export default function Level2() {
+export default function Level2({curIdx,setCurIdx}) {
   const [wSun, setWSun] = useState({ x: 0, y: 0, z: 0 });
   const [wEarth, setWEarth] = useState({ x: 2, y: 0, z: 0 });
   const [wMoon, setWMoon] = useState({ x: 1.6, y: 0, z: 0 });
@@ -41,7 +41,7 @@ export default function Level2() {
       <Canvas id="three-canvas-container" shadows>
         <Suspense fallback={<></>}>
 
-          <Play initPos={initPos} isWinning={isWinning} />
+          <Play curIdx={curIdx} setCurIdx={setCurIdx} initPos={initPos} isWinning={isWinning} />
           <Stars />
         </Suspense>
       </Canvas>

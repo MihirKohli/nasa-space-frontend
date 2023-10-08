@@ -38,7 +38,7 @@ import {
             justifyContent={{ sm: 'space-between', md: 'normal' }}
           >
             <VStack spacing={4} alignItems="flex-start">
-              <Text fontSize="md" fontWeight="bold">
+              <Text fontSize="md" fontWeight="bold" color={"gray.500"}>
                 Resources
               </Text>
               <VStack spacing={2} alignItems="flex-start" color="gray.500">
@@ -48,7 +48,7 @@ import {
                 <CustomLink href='https://science.nasa.gov/eclipses/history/'>History</CustomLink>
               </VStack>
             </VStack>
-            <VStack spacing={4} alignItems="flex-start">
+            <VStack spacing={4} alignItems="flex-start"color={"gray.500"} >
               <Text fontSize="md" fontWeight="bold">
                 Kids
               </Text>
@@ -60,7 +60,7 @@ import {
               </VStack>
             </VStack>
             <VStack spacing={4} alignItems="flex-start">
-              <Text fontSize="md" fontWeight="bold">
+              <Text fontSize="md" fontWeight="bold" color={"gray.500"}>
                 Other
               </Text>
               <VStack spacing={2} alignItems="flex-start" color="gray.500">
