@@ -10,6 +10,7 @@ import FullLunar from './components/solar/full_lunar';
 import PartialLunar from './components/solar/partial_lunar';
 import './fonts.css'
 import Footer from './components/footer/footer';
+import Level2 from './components/three/Level2';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
         <Route path="/partial_solar" element={<PartialSolar/>}/>
         <Route path="/full_lunar" element={<FullLunar/>}/>
         <Route path="/partial_lunar" element={<PartialLunar/>}/>
+        <Route path="/play" element={<Level2/>}/>
+        
       </Routes>
       </ChakraProvider>
       <ChakraProvider>

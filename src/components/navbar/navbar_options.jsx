@@ -31,9 +31,11 @@ function NavbarOptions() {
           </Button>
         </Link>
         <Divider orientation='vertical' height='50px' borderColor={'black'} border={'1px'}/>
+        <Link to='/play'>
           <Button fontSize="xl" fontWeight="bold" colorScheme="transparent" color="black">
             Play
           </Button>
+        </Link>
 
       </Flex>
     </Box>
