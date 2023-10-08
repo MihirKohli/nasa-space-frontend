@@ -18,14 +18,14 @@ function PartialSolar() {
             className='responsive-container'
             >
             <GridItem colSpan={2} p={4}>
-            <Heading as='h1' size='2xl' isTruncated color="white">
+            <Heading as='h1' size='2xl' isTruncated color="white" className="chakra-heading-class" m={'3'}>
               Partial Solar Eclipse
             </Heading>
-            <Text color="white">
+            <Text color="white" m={'3'}>
             A partial solar eclipse happens when the Moon passes between the Sun and Earth but the Sun, Moon, and Earth are not perfectly lined up. Only a part of the Sun will appear to be covered, giving it a crescent shape. During a total or annular solar eclipse, people outside the area covered by the Moon’s inner shadow see a partial solar eclipse.
             </Text>
             </GridItem>
-            <GridItem colSpan={2} p={4} mt={16}>
+            <GridItem colSpan={2} p={4} m={16}>
                 <img src={partial_solar} alt='partial' className="responsive-image"/>
             </GridItem>
             <GridItem colSpan={4} p={4}>

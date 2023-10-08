@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Bruce';
+    src: url("./components/fonts/audiowide/Audiowide-Regular.ttf") format('truetype'); /* Replace with the path to your TTF font */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .chakra-heading-class {
+      font-family: 'Bruce',sans-serif !important;
+    }
+
+@font-face {
+    font-family: 'Kol';
+    src: url("./components/fonts/kollektif/Kollektif-Bold.ttf") format('truetype'); /* Replace with the path to your TTF font */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .navbar-options {
+      font-family: 'Kol',sans-serif !important;
+    }

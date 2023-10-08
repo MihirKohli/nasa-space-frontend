@@ -1,3 +1,4 @@
+
 .background-container {
     position: relative;
     width: 100%;
@@ -60,3 +61,7 @@
   }
   
   
+  .responsive-image{
+    mix-blend-mode: lighten;
+  }
+    

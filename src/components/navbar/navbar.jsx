@@ -1,13 +1,13 @@
 import React from 'react';
-import { Box, Flex, Space, Text, ChakraProvider, Button } from '@chakra-ui/react';
+import { Box, Flex, Button } from '@chakra-ui/react';
 import {Link} from 'react-router-dom';
 
 function Navbar() {
   return (
-    <Box bg="black" p={4} color="#7F00FF">
+    <Box bg="black" p={4} >
       <Flex alignItems="center" justifyContent="center">
         <Link to='/'>
-          <Button fontSize="xl" fontWeight="bold" colorScheme="transparent" color="#7F00FF">
+          <Button fontSize="30px" fontWeight="bold" colorScheme="transparent" color="white">
             Eclipse 
           </Button>
         </Link>

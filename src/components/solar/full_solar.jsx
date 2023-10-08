@@ -18,18 +18,18 @@ function FullSolar() {
             className='responsive-container'
             >
             <GridItem colSpan={2} p={4}>
-            <Heading as='h1' size='2xl' isTruncated color="white">
+            <Heading as='h1' size='2xl' isTruncated color="white" className="chakra-heading-class" m={'3'}>
               Partial Solar Eclipse
             </Heading>
-            <Text color="white">
+            <Text color="white" m={'3'}>
             A full solar eclipse is a remarkable celestial event that captivates observers around the world. It occurs when the moon passes between the Earth and the Sun, perfectly aligning in a way that momentarily obscures the Sun's entire disk from view. During this awe-inspiring event, the sky darkens, stars become visible, and the temperature drops, creating an eerie and almost surreal atmosphere. What makes a full solar eclipse particularly striking is the appearance of the Sun's corona, a luminous halo of plasma that surrounds the obscured solar disk. This rare and dramatic phenomenon offers scientists valuable insights into the Sun's outer atmosphere and has cultural significance in many societies, often regarded as a symbol of cosmic wonder and mystery. Witnessing a full solar eclipse is an unforgettable experience, evoking a sense of awe and wonder at the grandeur of our solar system and the precision of celestial mechanics.</Text>
             </GridItem>
-            <GridItem colSpan={2} p={4} mt={16}>
+            <GridItem colSpan={2} p={4} m={16}>
                 <img src={full_solar} alt='partial' className="responsive-image"/>
             </GridItem>
             <GridItem colSpan={4} p={4}>
             <iframe
-    src="https://www.youtube.com/embed/tgbNymZ7vqY"
+    src="https://www.youtube.com/embed/watch?v=8PsqW7ydLGA&list=RDxGl4MFuGg_U&index=6"
     width="60%" 
     height="500px" 
     frameBorder="0"

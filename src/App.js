@@ -8,6 +8,8 @@ import FullSolar from './components/solar/full_solar';
 import PartialSolar from './components/solar/partial_solar';
 import FullLunar from './components/solar/full_lunar';
 import PartialLunar from './components/solar/partial_lunar';
+import './fonts.css'
+import Footer from './components/footer/footer';
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
         <Route path="/full_lunar" element={<FullLunar/>}/>
         <Route path="/partial_lunar" element={<PartialLunar/>}/>
       </Routes>
-
+      </ChakraProvider>
+      <ChakraProvider>
+      <Footer/>
       </ChakraProvider>
     </div>
   );
