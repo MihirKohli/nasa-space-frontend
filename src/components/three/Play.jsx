@@ -11,20 +11,41 @@ import { Ecliptic } from "./Ecliptic";
 
 export default function Play({initPos, isWinning}) {
 
-    let [sun,setSun] = useState(0);
+    let [sun,setSun] = useState({x:0,y:0,z:0});
     // let [sunX,setSunX] = useState(0);
     // let [sunZ,setSunZ] = useState(0);
     // let [earthX,setEarthX] = useState(2);
-    let [earth,setEarth] = useState(0);
+    let [earth,setEarth] = useState({x:0,y:0,z:0});
     // let [earthZ,setEarthZ] = useState(0);
-    let [moon,setMoon] = useState(2.4);
+    let [moon,setMoon] = useState({x:0,y:0,z:0});
     // let [moonY,setMoonY] = useState(0);
     // let [moonZ,setMoonZ] = useState(0);
     // let [moonCorX,setMoonCorX] = useState(null);
     // let [moonCorY,setMoonCorY] = useState(null);
-    let [moonCor, setMoonCor] = useState(null);
+    let [moonCor, setMoonCor] = useState([{x:initPos.moon.x,y:initPos.moon.y}]);
     let [curIdx, setCurIdx] = useState(0);
     let [earthMoonDist, setEarthMoonDist] = useState(0);
+
+    useEffect(() => {
+        setSun(initPos.sun);
+        setMoon(initPos.moon);
+        setEarth(initPos.earth);
+        // setMoonCor([{x:initPos.moon.x,y:initPos.moon.y}])
+        // setSunY(initPos.sun.y);
+        // setMoonY(initPos.moon.y);
+        // setEarthY(initPos.earth.y);
+        // setSunZ(initPos.sun.z);
+        // setMoonZ(initPos.moon.z);
+        // setEarthZ(initPos.earth.z);
+        
+        const obj = calculateCirclePoints(initPos.earth.x,initPos.earth.y,initPos.moon.x,initPos.moon.y); 
+        const dist = calculateDistance(initPos.earth.x,initPos.earth.y,initPos.moon.x,initPos.moon.y);
+        console.log(obj);
+        console.log(dist);
+        setMoonCor(obj);
+        setEarthMoonDist(dist);
+    }, [])
+
     useEffect(() => {
         function handleKeyDown(event) {
           if (event.key === "ArrowLeft") {
@@ -57,24 +78,7 @@ export default function Play({initPos, isWinning}) {
 
     // Animation
     // const ballRef = useRef(null);
-    useEffect(() => {
-        setSun(initPos.sun);
-        setMoon(initPos.moon);
-        setEarth(initPos.earth);
-        // setSunY(initPos.sun.y);
-        // setMoonY(initPos.moon.y);
-        // setEarthY(initPos.earth.y);
-        // setSunZ(initPos.sun.z);
-        // setMoonZ(initPos.moon.z);
-        // setEarthZ(initPos.earth.z);
-        
-        const obj = calculateCirclePoints(initPos.earth.x,initPos.earth.y,initPos.moon.x,initPos.moon.y); 
-        const dist = calculateDistance(initPos.earth.x,initPos.earth.y,initPos.moon.x,initPos.moon.y);
-        console.log(obj);
-        console.log(dist);
-        setMoonCor(obj);
-        setEarthMoonDist(dist);
-    }, [])
+    
 
     function calculateCirclePoints(mainX, mainY, otherX, otherY) {
         let radius = Math.sqrt(Math.pow(otherY - mainY, 2) + Math.pow(otherX - mainX, 2));
@@ -129,7 +133,7 @@ export default function Play({initPos, isWinning}) {
             </Html> */}
 
             {/* Camera */}
-            <PerspectiveCamera position={[0,1,2]} />
+            <PerspectiveCamera makeDefault position={[0,1,6]}  />
             <OrbitControls/>
             
         //Sun

@@ -19,10 +19,13 @@ function FullLunar() {
             >
             <GridItem colSpan={2} p={4}>
             <Heading as='h1' size='2xl' isTruncated color="white" className="chakra-heading-class" m={'3'}>
-              Partial Solar Eclipse
+              Full Lunar Eclipse
             </Heading>
             <Text color="white" m={'3'}>
-            A partial solar eclipse happens when the Moon passes between the Sun and Earth but the Sun, Moon, and Earth are not perfectly lined up. Only a part of the Sun will appear to be covered, giving it a crescent shape. During a total or annular solar eclipse, people outside the area covered by the Moon’s inner shadow see a partial solar eclipse.
+            A full lunar eclipse, scientifically referred to as a total lunar eclipse, occurs when the Earth passes directly between the Sun and the Moon, causing the Earth's shadow to be cast upon the Moon. During this extraordinary celestial event, the Moon can take on a reddish or coppery hue, commonly known as a "blood moon." This phenomenon transpires due to Earth's atmosphere bending and refracting sunlight, allowing only the longer wavelengths, such as red and orange, to reach the Moon's surface.
+            Total lunar eclipses are remarkable astronomical occurrences, providing scientists and astronomers with unique opportunities to study Earth's atmosphere. By analyzing the color and intensity of the light refracted onto the Moon, researchers gain insights into our planet's atmospheric composition. These observations contribute valuable data for atmospheric studies and deepen our understanding of Earth's atmospheric properties.
+            In addition to their scientific significance, full lunar eclipses have cultural and historical importance in various societies around the world. They often feature prominently in myths, legends, and religious narratives, shaping the cultural heritage of diverse civilizations. Furthermore, total lunar eclipses captivate the public's interest, prompting organized viewing events and educational initiatives to enhance public awareness of astronomy and celestial phenomena.
+            Overall, a full lunar eclipse serves as a powerful reminder of the intricate dance of celestial bodies in our solar system and fosters a sense of wonder and curiosity about the universe among people of all ages.
             </Text>
             </GridItem>
             <GridItem colSpan={2} p={4} m={16}>
@@ -30,7 +33,7 @@ function FullLunar() {
             </GridItem>
             <GridItem colSpan={4} p={4}>
             <iframe
-    src="https://www.youtube.com/embed/tgbNymZ7vqY"
+    src="https://www.youtube.com/embed/6YORyBZ7qJ8"
     width="60%" 
     height="500px" 
     frameBorder="0"
