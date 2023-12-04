@@ -1,6 +1,10 @@
 # Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Home Page
+[![1.png](https://i.postimg.cc/fWdDFVQ6/1.png)](https://postimg.cc/4nXDHNd5)
+## Navigation
+[![2.png](https://i.postimg.cc/025XS4nc/2.png)](https://postimg.cc/QVPqG0RT)
+## 3D Live Model
+[![3.png](https://i.postimg.cc/j2GSNfNb/3.png)](https://postimg.cc/WqwVchXW)
 
 ## Available Scripts
 
